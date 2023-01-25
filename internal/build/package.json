@@ -1,0 +1,80 @@
+{
+  "name": "@eomts/build",
+  "private": true,
+  "description": "🚀 The package offer build for eomts!",
+  "keywords": [
+    "monorepo",
+    "pnpm",
+    "turborepo",
+    "changesets",
+    "vite",
+    "build"
+  ],
+  "homepage": "https://github.com/eopol/eo-monorepo-tsup-starter#readme",
+  "bugs": {
+    "url": "https://github.com/eopol/eo-monorepo-tsup-starter/issues"
+  },
+  "license": "MIT",
+  "author": "i7eo<admin@i7eo.com>",
+  "files": [
+    "dist"
+  ],
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "dev": "./src/index.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js"
+    },
+    "./config": {
+      "dev": "./src/config.ts",
+      "require": "./dist/config.cjs",
+      "import": "./dist/config.js"
+    },
+    "./*": "./*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eopol/eo-monorepo-tsup-starter.git"
+  },
+  "sideEffects": false,
+  "scripts": {
+    "dev": "tsup ./src/index.ts --format esm,cjs --dts --watch",
+    "build": "rimraf dist && tsup ./src/index.ts --format esm,cjs --dts",
+    "lint": "run-s lint:**",
+    "lint:eslint": "TIMING=1 eslint \"*.{js,jsx,ts,tsx,md,json}\" --fix",
+    "lint:prettier": "prettier --write \"*.{js,ts,jsx,tsx,md,json}\"",
+    "clean": "run-p clean:**",
+    "clean:cache": "rimraf .turbo && rimraf dist",
+    "clean:deps": "rimraf node_modules"
+  },
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./*"
+      ]
+    }
+  },
+  "dependencies": {
+    "@pnpm/find-workspace-dir": "^4.0.3",
+    "@pnpm/find-workspace-packages": "^4.0.42",
+    "@pnpm/logger": "^4.0.0",
+    "@yarnpkg/core": "^4.0.0-rc.14",
+    "esbuild": "^0.15.11",
+    "local-pkg": "^0.4.2",
+    "tsup": "^6.2.3",
+    "unconfig": "^0.3.7",
+    "unplugin-vue": "^3.1.3"
+  },
+  "devDependencies": {
+    "consola": "^2.15.3",
+    "tsx": "^3.10.1",
+    "typescript": "^4.8.4",
+    "vue": "^3.2.41"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}

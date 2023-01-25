@@ -1,0 +1,11 @@
+{
+  "extends": "@eomts/ts-config/web.json",
+  "include": [
+    "internal/constants/src/**/*",
+    "internal/constants/package.json",
+    "packages/**/*/src/**/*",
+    "packages/**/*/package.json",
+    "packages/**/typings"
+  ],
+  "exclude": ["**/__tests__/**", "**/tests/**"]
+}

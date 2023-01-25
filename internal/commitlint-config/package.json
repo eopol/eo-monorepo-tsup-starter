@@ -1,0 +1,38 @@
+{
+  "name": "@eomts/commitlint-config",
+  "version": "0.0.0",
+  "private": true,
+  "description": "🚀 The package offer commitlint for eomts!",
+  "keywords": [
+    "monorepo",
+    "pnpm",
+    "turborepo",
+    "changesets",
+    "vite",
+    "commitlint"
+  ],
+  "homepage": "https://github.com/eopol/eo-monorepo-tsup-starter#readme",
+  "bugs": {
+    "url": "https://github.com/eopol/eo-monorepo-tsup-starter/issues"
+  },
+  "license": "MIT",
+  "author": "i7eo<admin@i7eo.com>",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eopol/eo-monorepo-tsup-starter.git"
+  },
+  "scripts": {
+    "clean": "run-p clean:**",
+    "clean:cache": "rimraf .turbo && rimraf dist",
+    "clean:deps": "rimraf node_modules"
+  },
+  "dependencies": {
+    "@commitlint/cli": "17.1.2",
+    "@commitlint/config-conventional": "17.1.0",
+    "czg": "1.3.11"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}

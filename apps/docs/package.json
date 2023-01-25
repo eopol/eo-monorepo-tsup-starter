@@ -1,0 +1,33 @@
+{
+  "name": "@eomts/docs",
+  "version": "0.0.0",
+  "description": "🚀 The package offer docs for eomts!",
+  "keywords": [
+    "monorepo",
+    "pnpm",
+    "turborepo",
+    "changesets",
+    "vite",
+    "vue",
+    "docs"
+  ],
+  "homepage": "https://github.com/eopol/eo-monorepo-tsup-starter#readme",
+  "bugs": {
+    "url": "https://github.com/eopol/eo-monorepo-tsup-starter/issues"
+  },
+  "license": "MIT",
+  "author": "i7eo<admin@i7eo.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eopol/eo-monorepo-tsup-starter.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}

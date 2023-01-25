@@ -1,0 +1,19 @@
+{
+  "$schema": "https://unpkg.com/@changesets/config@2.1.1/schema.json",
+  "changelog": [
+    "@changesets/changelog-github",
+    {
+      "repo": "eopol/eo-monorepo-tsup-starter"
+    }
+  ],
+  "commit": false,
+  "ignore": [],
+  "fixed": [],
+  "linked": [],
+  "access": "public",
+  "baseBranch": "main",
+  "updateInternalDependencies": "patch",
+  "___experimentalUnsafeOptions_WILL_CHANGE_IN_PATCH": {
+    "onlyUpdatePeerDependentsWhenOutOfRange": true
+  }
+}

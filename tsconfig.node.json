@@ -1,0 +1,10 @@
+{
+  "extends": "@eomts/ts-config/node.json",
+  "include": [
+    "internal/build/**/*",
+    "internal/build/**/*.json",
+    "**/build.config.ts",
+    "**/scripts/**/*"
+  ],
+  "exclude": ["**/__tests__/**", "**/tests/**", "**/dist"]
+}

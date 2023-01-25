@@ -1,0 +1,51 @@
+{
+  "name": "@eomts/stylelint-config",
+  "version": "0.0.0",
+  "private": true,
+  "description": "🚀 The package offer stylelint for eomts!",
+  "keywords": [
+    "monorepo",
+    "pnpm",
+    "turborepo",
+    "changesets",
+    "vite",
+    "eslint",
+    "@antfu/eslint-config-vue"
+  ],
+  "homepage": "https://github.com/eopol/eo-monorepo-tsup-starter#readme",
+  "bugs": {
+    "url": "https://github.com/eopol/eo-monorepo-tsup-starter/issues"
+  },
+  "license": "MIT",
+  "author": "i7eo<admin@i7eo.com>",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eopol/eo-monorepo-tsup-starter.git"
+  },
+  "scripts": {
+    "clean": "run-p clean:**",
+    "clean:cache": "rimraf .turbo && rimraf dist",
+    "clean:deps": "rimraf node_modules"
+  },
+  "peerDependencies": {
+    "stylelint": "^14.13.0"
+  },
+  "dependencies": {
+    "postcss": "^8.4.17",
+    "postcss-html": "^1.5.0",
+    "postcss-scss": "^4.0.5",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-recommended": "^9.0.0",
+    "stylelint-config-recommended-vue": "^1.4.0",
+    "stylelint-config-standard": "^28.0.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-scss": "4.3.0"
+  },
+  "devDependencies": {
+    "stylelint": "^14.13.0"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}

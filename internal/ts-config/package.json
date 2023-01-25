@@ -1,0 +1,35 @@
+{
+  "name": "@eomts/ts-config",
+  "version": "0.0.0",
+  "private": true,
+  "description": "🚀 The package offer tsconfig for eomts!",
+  "keywords": [
+    "monorepo",
+    "pnpm",
+    "turborepo",
+    "changesets",
+    "vite",
+    "tsconfig"
+  ],
+  "homepage": "https://github.com/eopol/eo-monorepo-tsup-starter#readme",
+  "bugs": {
+    "url": "https://github.com/eopol/eo-monorepo-tsup-starter/issues"
+  },
+  "license": "MIT",
+  "author": "i7eo<admin@i7eo.com>",
+  "files": [
+    "base.json",
+    "docs.json",
+    "node.json",
+    "vite-config.json",
+    "vitest.json",
+    "web.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eopol/eo-monorepo-tsup-starter.git"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}

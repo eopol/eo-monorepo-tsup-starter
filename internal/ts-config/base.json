@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "TSConfig Base",
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": ["ESNext"],
+    
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    
+    "allowJs": false,
+    "sourceMap": false,
+    "types": [],
+
+    "strict": true,
+    "noUnusedLocals": true,
+    "skipLibCheck": true,
+
+    "outDir": "dist",
+    "baseUrl": "../../..",
+    "paths": {
+      // "element-plus-next": ["packages/web/element-plus/src/index"],
+      // "@element-plus-next/build/config": ["packages/node/build/src/config.ts"],
+      // "@element-plus-next/*": ["packages/web/*/src", "packages/node/*/src"],
+      // "@element-plus-next/locale/lang/*": ["packages/web/locale/src/lang/*.ts"]
+    }
+  }
+}

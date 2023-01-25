@@ -1,0 +1,5 @@
+{
+  "extends": "@eomts/ts-config/docs.json",
+  "include": ["apps/docs", "apps/docs/.vitepress"],
+  "exclude": []
+}

@@ -1,0 +1,4 @@
+{
+  "extends": "@eomts/ts-config/vite-config.json",
+  "include": ["**/vite.config.*", "**/vitest.config.*"]
+}

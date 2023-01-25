@@ -1,0 +1,49 @@
+{
+  "name": "@eomts/constants",
+  "private": true,
+  "description": "🚀 The package offer constants for eomts!",
+  "keywords": [
+    "monorepo",
+    "pnpm",
+    "turborepo",
+    "changesets",
+    "vite",
+    "constants"
+  ],
+  "homepage": "https://github.com/eopol/eo-monorepo-tsup-starter#readme",
+  "bugs": {
+    "url": "https://github.com/eopol/eo-monorepo-tsup-starter/issues"
+  },
+  "license": "MIT",
+  "author": "i7eo<admin@i7eo.com>",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "dev": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    },
+    "./*": "./*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eopol/eo-monorepo-tsup-starter.git"
+  },
+  "sideEffects": false,
+  "scripts": {
+    "dev": "tsup ./src/index.ts --format esm,cjs --dts --watch",
+    "build": "rimraf dist && tsup ./src/index.ts --format esm,cjs --dts",
+    "lint": "run-s lint:**",
+    "lint:eslint": "TIMING=1 eslint \"*.{js,jsx,ts,tsx,md,json}\" --fix",
+    "lint:prettier": "prettier --write \"*.{js,ts,jsx,tsx,md,json}\"",
+    "clean": "run-p clean:**",
+    "clean:cache": "rimraf .turbo && rimraf dist",
+    "clean:deps": "rimraf node_modules"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}

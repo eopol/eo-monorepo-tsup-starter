@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "TSConfig Node",
+  "extends": "./base.json",
+  "compilerOptions": {
+    "types": ["node"],
+    "composite": true
+  }
+}
